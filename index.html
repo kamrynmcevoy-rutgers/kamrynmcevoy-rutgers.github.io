@@ -1,3 +1,8 @@
+Here is the fully updated code!
+
+The citation tags ([cite: 2]) have been completely removed, the project titles are updated to match your exact titles (Real Estate & Franchise Development Intern, CRE Valuation & Property Analysis Certification, and CBRE Commercial Real Estate Virtual Job Simulation), and the layout now uses the exact side-by-side structure from your example photo.
+
+HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,45 +18,77 @@
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
-      background-color: #f4f6f8;
+      background-color: #f8fafc;
       color: #333;
       padding: 40px 20px;
     }
     .container {
-      max-width: 850px;
+      max-width: 900px;
       margin: 0 auto;
       background: #ffffff;
-      padding: 40px;
+      padding: 45px;
       border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
     }
+    /* HEADER / HERO LAYOUT */
     header {
       display: flex;
+      align-items: flex-start;
+      gap: 40px;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 35px;
+      margin-bottom: 35px;
+    }
+    .profile-card {
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 30px;
-      border-bottom: 3px solid #003366;
-      padding-bottom: 30px;
-      margin-bottom: 30px;
+      text-align: center;
+      min-width: 180px;
     }
     .profile-pic {
-      width: 150px;
-      height: 150px;
+      width: 160px;
+      height: 160px;
+      aspect-ratio: 1 / 1;
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid #003366;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-    .header-text h1 {
-      font-size: 2.2rem;
+    .profile-card h2 {
+      font-size: 1.25rem;
+      color: #111;
+      margin-bottom: 2px;
+    }
+    .profile-card .school {
+      font-size: 0.9rem;
+      font-weight: 600;
       color: #003366;
-      margin-bottom: 10px;
     }
-    .header-text p {
-      font-size: 1.1rem;
+    .profile-card .grad-year {
+      font-size: 0.85rem;
+      color: #666;
+    }
+    .header-content {
+      flex: 1;
+    }
+    .header-content h1 {
+      font-size: 2.1rem;
+      color: #003366;
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+    .header-content p {
+      font-size: 1.05rem;
       color: #444;
+      line-height: 1.6;
     }
-    h2 {
+
+    /* MAIN SECTIONS */
+    h2.section-title {
       color: #003366;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       margin-bottom: 15px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
@@ -78,7 +115,7 @@
       margin-bottom: 20px;
     }
     .project-card h3 {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       color: #111;
       margin-bottom: 8px;
     }
@@ -103,17 +140,23 @@
     
     <!-- HEADER SECTION -->
     <header>
-      <img src="Headshot - Kamryn McEvoy.PNG" alt="Kamryn McEvoy Headshot" class="profile-pic">
-      <div class="header-text">
-        <h1>Kamryn McEvoy</h1>
-        <p>Hi, my name is Kamryn McEvoy and I am a sophomore studying Finance and Real Estate at Rutgers Business School.</p>
+      <div class="profile-card">
+        <img src="Headshot - Kamryn McEvoy.PNG" alt="Kamryn McEvoy" class="profile-pic">
+        <h2>Kamryn McEvoy</h2>
+        <span class="school">Rutgers Business School</span>
+        <span class="grad-year">Class of 2029</span>
+      </div>
+
+      <div class="header-content">
+        <h1>Finance & Real Estate Strategy, Rooted at Rutgers.</h1>
+        <p>Hi, my name is Kamryn McEvoy and I am an undergraduate student studying Finance and Real Estate at Rutgers Business School. I am focused on gaining hands-on experience in market research, commercial property valuation, and financial modeling.</p>
       </div>
     </header>
 
     <main>
       <!-- SKILLS SECTION -->
       <section>
-        <h2>Skills</h2>
+        <h2 class="section-title">Skills</h2>
         <ul>
           <li><strong>Financial & Real Estate Analysis:</strong> Commercial Real Estate Valuation, Property & Site Analysis, Lease & LOI Evaluation, Financial Modeling, Market Data Analysis</li>
           <li><strong>Technical & Tools:</strong> Microsoft Excel, CoStar, Monday.com, POS Systems, Buxton, HTML/CSS, JavaScript</li>
@@ -123,17 +166,17 @@
 
       <!-- PROJECTS SECTION -->
       <section>
-        <h2>Projects & Experience</h2>
+        <h2 class="section-title">Projects & Experience</h2>
 
         <div class="project-card">
-          <h3>Franchise Real Estate & Site Selection Analysis</h3>
-          <p>Evaluated prospective commercial sites, Letters of Intent (LOIs), and deal structures at Opening Edge Solutions to assist franchisees in site selection[cite: 2]. Managed deal pipelines and transaction tracking using Excel and Monday.com[cite: 2].</p>
+          <h3>Real Estate & Franchise Development Intern</h3>
+          <p>Evaluated prospective commercial sites, Letters of Intent (LOIs), and deal structures at Opening Edge Solutions to assist franchisees in site selection. Managed deal pipelines and transaction tracking using Excel and Monday.com.</p>
           <a href="https://www.linkedin.com/in/kamrynmcevoy" target="_blank">View Professional Experience Profile &rarr;</a>
         </div>
 
         <div class="project-card">
-          <h3>Commercial Real Estate Valuation & Property Analysis</h3>
-          <p>Participated in an intensive program focused on commercial real estate valuation, property analysis, and financial modeling with Project Destined[cite: 2]. Evaluated real-world market data and collaborated with industry mentors to analyze investment strategies[cite: 2].</p>
+          <h3>CRE Valuation & Property Analysis Certification</h3>
+          <p>Participated in an intensive program focused on commercial real estate valuation, property analysis, and financial modeling with Project Destined. Evaluated real-world market data and collaborated with industry mentors to analyze investment strategies.</p>
           <a href="https://certificates.projectdestined.com/credentials/2c7ddbc2-8029-4fe6-a92a-27d33be57baa?preview=1" target="_blank">View Certificate Credentials &rarr;</a>
         </div>
 
